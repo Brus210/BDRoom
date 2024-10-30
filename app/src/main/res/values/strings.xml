@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaseDeDatos</string>
+    <string name="title_activity_lista_recycler">lista_recycler</string>
+</resources>
