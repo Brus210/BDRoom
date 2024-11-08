@@ -75,7 +75,10 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
 
-   
+    implementation ("androidx.recyclerview:recyclerview")
+
+
+
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version")
 // LiveData
@@ -93,4 +96,5 @@ implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
 // optional - ReactiveStreams support for LiveData
 implementation("androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version")
 implementation("androidx.room:room-runtime:$room_version")
-annotationProcessor("androidx.room:room-compiler:$room_version")}
+annotationProcessor("androidx.room:room-compiler:$room_version")
+}

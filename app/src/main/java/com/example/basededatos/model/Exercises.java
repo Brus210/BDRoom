@@ -17,7 +17,7 @@ public class Exercises implements Serializable {
     private int id;
 
     @ColumnInfo (name = "name")
-    private String nombre;
+    private String name;
 
     @ColumnInfo (name = "muscle")
     private String muscle;
@@ -25,20 +25,13 @@ public class Exercises implements Serializable {
     @ColumnInfo (name = "description")
     private String description;
 
-    @ColumnInfo (name = "image")
-    private String image;
-
-    @ColumnInfo (name = "trainer_id")
-    private int trainer_id;
-
-    public Exercises() { }
+    /*public Exercises() { }
     public Exercises(String nombre, String muscle, String description, String image, int trainer_id) {
-        this.nombre = nombre;
+        this.name = nombre;
         this.muscle = muscle;
         this.description = description;
-        this.image = image;
-        this.trainer_id = trainer_id;
-    }
+
+    }*/
 
     public int getId() {
         return id;
@@ -48,12 +41,12 @@ public class Exercises implements Serializable {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getMuscle() {
@@ -72,23 +65,10 @@ public class Exercises implements Serializable {
         this.description = description;
     }
 
-    public String getImage() {
-        return image;
+    // Constructor vacío
+    public Exercises() {
+        // Constructor vacío para instanciación sin argumentos
     }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public int getTrainer_id() {
-        return trainer_id;
-    }
-
-    public void setTrainer_id(int trainer_id) {
-        this.trainer_id = trainer_id;
-    }
-
-
 
 
 
